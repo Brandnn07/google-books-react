@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
-    id: {type: String, require: true},
+    id: {type: String},
     title: { type: String, require: true},
     authors: [{ type: String, require: true}],
     sypnosis: String,
@@ -13,4 +13,4 @@ const bookSchema = new Schema({
 
 const Book = mongoose.model("Book", bookSchema);
 
-module.exports = GoogleBooks;
+module.exports = Book;

@@ -4,8 +4,7 @@ import Books from "./pages/Books";
 import Detail from "./pages/Detail";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
-import SaveBooks from "./pages/SaveBooks";
-import Search from "./pages/Search"
+import SavedBooks from "./pages/SaveBooks";
 
 function App() {
   return (
@@ -23,10 +22,7 @@ function App() {
             <NoMatch />
           </Route>
           <Route exact path="/save">
-            <SaveBooks />
-          </Route>
-          <Route exact path="/search">
-            <Search />
+            <SavedBooks />
           </Route>
         </Switch>
       </div>
